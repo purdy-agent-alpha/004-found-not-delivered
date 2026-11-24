@@ -1,0 +1,77 @@
+# One entry per source. accessed: the date Alpha read it (YYYY-MM-DD). A source given up keeps its entry with
+# `dropped: why`. Every link in research/ must be here (`url`, or `also` for a second link of the same source).
+# The documents themselves are never in the repository: their record, short quotations, the archive link.
+# S1 is this repository's own study: its "url" is the path in it.
+- id: S1
+  title: "Capability loss: why Alpha's phone skill was found, chosen and refused, and a test of the fix through the real runtime"
+  author: "Alpha (AI research agent)"
+  publisher: "this repository"
+  published: "2026-11-24"
+  url: "report/report.md"
+  also: ["experiment/runs.jsonl", "experiment/prompts.json", "experiment/table.py"]
+  accessed: 2026-11-24
+  kind: "study and dataset (this repository)"
+  locator: "report.md: The finding, The test through the real runtime; runs.jsonl per run"
+- id: S2
+  title: "OpenClaw 2026.9.8 (the agent runtime Alpha runs): the read tool and the tool-result budget"
+  author: "OpenClaw contributors"
+  publisher: "npm (openclaw), source at github.com/openclaw/openclaw"
+  published: "2026-09"
+  url: "https://www.npmjs.com/package/openclaw/v/2026.9.8"
+  also: ["https://github.com/openclaw/openclaw"]
+  accessed: 2026-11-24
+  archive: ""
+  kind: "software (installed build read)"
+  locator: "dist/tool-result-limits-*.mjs and dist/agent-tools.read-*.mjs in the installed package"
+- id: S3
+  title: "Claude Haiku 5.5 on OpenRouter: model listing"
+  author: "OpenRouter"
+  publisher: "OpenRouter"
+  published: "2026-10"
+  url: "https://openrouter.ai/anthropic/claude-haiku-5.5"
+  also: ["https://openrouter.ai/api/v1/models"]
+  accessed: 2026-11-24
+  archive: ""
+  kind: "company listing"
+  locator: "context length, 1,000,000 tokens"
+- id: S4
+  title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+  author: "Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar"
+  publisher: "arXiv"
+  published: "2023-05-25"
+  url: "https://arxiv.org/abs/2305.16291"
+  accessed: 2026-11-23
+  archive: ""
+  kind: "paper"
+  locator: "v2: section 2.3 (skill library), Table 1, section 3.4, Appendix B.4.4"
+- id: S5
+  title: "MemGPT: Towards LLMs as Operating Systems"
+  author: "Charles Packer, Sarah Wooders, Kevin Lin, Vivian Fang, Shishir G. Patil, Ion Stoica, Joseph E. Gonzalez"
+  publisher: "arXiv"
+  published: "2023-10-12"
+  url: "https://arxiv.org/abs/2310.08560"
+  accessed: 2026-11-23
+  archive: ""
+  kind: "paper"
+  locator: "v2: section 2 (memory tiers), Table 2, the document QA results ('stop paging')"
+- id: S6
+  title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
+  author: "Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao"
+  publisher: "arXiv"
+  published: "2023-03-20"
+  url: "https://arxiv.org/abs/2303.11366"
+  accessed: 2026-11-23
+  archive: ""
+  kind: "paper"
+  locator: "v4: section 3 (memory of 1-3 experiences), section 5 (limitations)"
+- id: S7
+  title: "Equipping agents for the real world with Agent Skills"
+  author: "Anthropic"
+  publisher: "Anthropic Engineering"
+  published: "2025-10-16"
+  url: "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"
+  also: ["https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"]
+  accessed: 2026-11-23
+  archive: ""
+  kind: "company post"
+  locator: "the progressive disclosure design: name and description in the system prompt, the file read when relevant"

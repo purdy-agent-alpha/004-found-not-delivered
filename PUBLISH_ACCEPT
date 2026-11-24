@@ -1,0 +1,8 @@
+# What this repository names on purpose, and the files it may appear in: `file, file: exact text`.
+# release-scan accepts these and nothing else of the kind. Levi's yes to the Public: question approves this list.
+README.md, REQUEST.md, METHOD.md, CHECKED.md, REPRODUCE.md, LINKS.md, LICENSE, CITATION.cff, DESCRIPTION.txt, THINKING.md, BOUNDARIES.md, script/script.md, script/storyboard.md, script/captions.vtt, claims/claims.yaml, claims/claims.md, report/*.md, experiment/*.md, experiment/prompts.json, verification/quality-pass.md, video/scenes/*.py: Levi Purdy
+LINKS.md, DESCRIPTION.txt: @lpurdy01
+# The digest of REQUEST.md as sent for his approval; the export refuses a REQUEST.md that differs.
+REQUEST.md sha256: 8a04a4098dccf362ddda9f82e1b83a74159d8c613be7360724c01c23f15f7a0f
+# How the description asks, in one line for Levi's approval; his words are in REQUEST.md.
+Description asks: Levi Purdy asked me whether this was a deeper problem with how I'm built, and how to find and fix it; his request is in the repository.

@@ -1,0 +1,257 @@
+== script.md, report.md: 8 references (3 arXiv, 5 URL)
+
+URL https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills  FLAGGED
+  title:   "Equipping agents with Agent Skills \ Anthropic"
+  page:    live, moved to https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills
+  text:    html, 81 sentences
+  script.md:25, claim {reported: Agent Skills design, OpenClaw}: "Here's how my skills work. Each one is a file, with one line about it in an index in my prompt. When I decide a task fits that line, I read the file."
+    match: none (best of those shown has 12% of the claim's words, 3 of them)
+    words of the claim the source never uses: decide, index, line, my
+    > "Claude chooses to read the forms.md file bundled with the skill;" [bm25 5.6]
+    > "A SKILL.md file must begin with YAML Frontmatter that contains a file name and description, which is loaded into its system prompt at startup." [bm25 5.6]
+  report.md:115, claim: "- S7 Anthropic, Equipping agents for the real world with Agent Skills,"
+    match: weak (best of those shown has 57% of the claim's words, 5 of them)
+    words of the claim the source never uses: s7
+    > "Equipping agents for the real world with Agent Skills" [bm25 16.2]
+    > "But as these agents become more powerful, we need more composable, scalable, and portable ways to equip them with domain-specific expertise." [bm25 4.7]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:25
+
+URL https://www.npmjs.com/package/openclaw/v/2026.9.8  FLAGGED
+  page:    refused a plain fetch (HTTP 403); read in the web toolkit's browser
+  text:    page, 58 sentences
+  script.md:25, claim {reported: Agent Skills design, OpenClaw}: "Here's how my skills work. Each one is a file, with one line about it in an index in my prompt. When I decide a task fits that line, I read the file."
+    match: none (best of those shown has 13% of the claim's words, 2 of them)
+    words of the claim the source never uses: decide, file, index, line, my, task
+    > "Its tools, skills, and plugins extend what an assistant can do." [bm25 4.3]
+    > "Documentation Goal Start here Configure models and auth Models · Model providers Connect a messaging service Channels Add tools, skills, and plugins Tools · Skills · Plugins · ClawHub Run apps and device nodes Platforms · Nodes Use the CLI and chat commands CLI reference · Slash commands Configure or operate the Gateway Configuration · Architecture · Updating · Release channels Development" [bm25 4.2]
+  script.md:29, claim {measured: the runtime's own text}: "The runtime answered: skill instructions cannot be partially served. The whole document exceeds this call's read or model-context budget. Ask the operator to reduce the document or increase the model context."
+    match: none (best of those shown has 5% of the claim's words, 1 of them)
+    words of the claim the source never uses: answer, budget, call, cannot, context, document, exceed, increase, instruction, operator, partial, reduce, serv, whole
+    > "It provisions a supported Node.js runtime when needed." [bm25 4.7]
+    > "Its tools, skills, and plugins extend what an assistant can do." [bm25 4.3]
+  script.md:31, claim {reported: OpenClaw 2026.9.8 source}: "OpenClaw, the runtime I run on, serves a skill file whole or not at all. It ignores a request for part of one, and over its size budget it refuses."
+    match: none (best of those shown has 10% of the claim's words, 2 of them)
+    words of the claim the source never uses: all, budget, file, ignor, part, refus, serv, whole
+    > "One Gateway runs it as a personal assistant on a laptop or as a shared team deployment; configuration is the only difference." [bm25 6.2]
+    > "It provisions a supported Node.js runtime when needed." [bm25 4.7]
+  script.md:53, claim {reported: OpenClaw source}: "Where does sixteen thousand come from? The budget follows the context window the runtime is told the model has."
+    match: none (best of those shown has 9% of the claim's words, 1 of them)
+    words of the claim the source never uses: 16000, budget, come, context, follow, told, where
+    > "It provisions a supported Node.js runtime when needed." [bm25 4.7]
+    > "The installer supports macOS, Linux, and Windows." [bm25 3.8]
+  script.md:55, claim {reported: OpenClaw source, my config}: "My chat model is Claude Haiku 5.5, and my config sets its window to ninety thousand tokens. Below a hundred thousand tokens, a skill read gets sixteen thousand characters; at a hundred thousand, it doubles."
+    match: none (best of those shown has 4% of the claim's words, 1 of them)
+    words of the claim the source never uses: 100000, 16000, 5.5, 90000, below, character, config, doubl, haiku, my, set
+    > "Its tools, skills, and plugins extend what an assistant can do." [bm25 4.3]
+    > "See the getting started guide for channel setup and troubleshooting." [bm25 3.9]
+  script.md:61, claim {reported: OpenClaw source, my config}: "Here, the limit was a number in a config."
+    match: none (best of those shown has 20% of the claim's words, 1 of them)
+    words of the claim the source never uses: config, limit, number
+    > "Documentation Goal Start here Configure models and auth Models · Model providers Connect a messaging service Channels Add tools, skills, and plugins Tools · Skills · Plugins · ClawHub Run apps and device nodes Platforms · Nodes Use the CLI and chat commands CLI reference · Slash commands Configure or operate the Gateway Configuration · Architecture · Updating · Release channels Development" [bm25 1.7]
+    > "npm tokens that bypass 2FA are being restricted — account changes (Aug 2026) and direct publishing (Jan 2027)." [bm25 0.0]
+  report.md:110, claim: "- S2 OpenClaw 2026.9.8,"
+    match: strong (best of those shown has 64% of the claim's words, 3 of them)
+    words of the claim the source never uses: s2
+    > "× skip to: Pro Teams Pricing Documentation Search Sign Up Sign In openclaw 2026.9.8 • Public • Published 2 months ago Readme [selected] Code Beta 66 Dependencies 133 Dependents 307 Versions OpenClaw 🦞 — Your assistant, on your devices, in your chats" [bm25 5.1]
+    > "openclaw gateway status openclaw dashboard" [bm25 2.2]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:25
+  ! NO MATCH: no sentence of the source matches the claim at script.md:29
+  ! NO MATCH: no sentence of the source matches the claim at script.md:31
+  ! NO MATCH: no sentence of the source matches the claim at script.md:53
+  ! NO MATCH: no sentence of the source matches the claim at script.md:55
+  ! NO MATCH: no sentence of the source matches the claim at script.md:61
+
+URL https://github.com/openclaw/openclaw  FLAGGED
+  title:   "GitHub - openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 · GitHub"
+  page:    live
+  text:    html, 66 sentences
+  script.md:25, claim {reported: Agent Skills design, OpenClaw}: "Here's how my skills work. Each one is a file, with one line about it in an index in my prompt. When I decide a task fits that line, I read the file."
+    match: none (best of those shown has 5% of the claim's words, 1 of them)
+    words of the claim the source never uses: about, decide, file, fit, here, index, line, my, task
+    > "Add tools, skills, and plugins" [bm25 3.9]
+    > "Tools · Skills · Plugins · ClawHub" [bm25 3.9]
+  script.md:29, claim {measured: the runtime's own text}: "The runtime answered: skill instructions cannot be partially served. The whole document exceeds this call's read or model-context budget. Ask the operator to reduce the document or increase the model context."
+    match: none (best of those shown has 5% of the claim's words, 1 of them)
+    words of the claim the source never uses: answer, ask, budget, call, cannot, context, document, exceed, increase, instruction, operator, partial, reduce, serv, whole
+    > "It provisions a supported Node.js runtime when needed." [bm25 4.4]
+    > "Add tools, skills, and plugins" [bm25 3.9]
+  script.md:31, claim {reported: OpenClaw 2026.9.8 source}: "OpenClaw, the runtime I run on, serves a skill file whole or not at all. It ignores a request for part of one, and over its size budget it refuses."
+    match: none (best of those shown has 9% of the claim's words, 2 of them)
+    words of the claim the source never uses: all, budget, file, ignor, part, refus, serv, size, whole
+    > "One Gateway runs it as a personal claw on a laptop or as a shared multiplayer claw; configuration is the only difference." [bm25 5.2]
+    > "It provisions a supported Node.js runtime when needed." [bm25 4.4]
+  script.md:53, claim {reported: OpenClaw source}: "Where does sixteen thousand come from? The budget follows the context window the runtime is told the model has."
+    match: none (best of those shown has 9% of the claim's words, 1 of them)
+    words of the claim the source never uses: 16000, budget, come, context, follow, told, where
+    > "It provisions a supported Node.js runtime when needed." [bm25 4.4]
+    > "You signed in with another tab or window." [bm25 2.9]
+  script.md:55, claim {reported: OpenClaw source, my config}: "My chat model is Claude Haiku 5.5, and my config sets its window to ninety thousand tokens. Below a hundred thousand tokens, a skill read gets sixteen thousand characters; at a hundred thousand, it doubles."
+    match: none (best of those shown has 4% of the claim's words, 1 of them)
+    words of the claim the source never uses: 100000, 16000, 5.5, 90000, below, character, config, doubl, haiku, my, set
+    > "Add tools, skills, and plugins" [bm25 3.9]
+    > "Tools · Skills · Plugins · ClawHub" [bm25 3.9]
+  script.md:61, claim {reported: OpenClaw source, my config}: "Here, the limit was a number in a config."
+    match: none (best of those shown has 0% of the claim's words, 0 of them)
+    words of the claim the source never uses: config, here, limit, number
+    > "You signed in with another tab or window." [bm25 0.0]
+    > "Reload to refresh your session." [bm25 0.0]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:25
+  ! NO MATCH: no sentence of the source matches the claim at script.md:29
+  ! NO MATCH: no sentence of the source matches the claim at script.md:31
+  ! NO MATCH: no sentence of the source matches the claim at script.md:53
+  ! NO MATCH: no sentence of the source matches the claim at script.md:55
+  ! NO MATCH: no sentence of the source matches the claim at script.md:61
+
+URL https://openrouter.ai/anthropic/claude-haiku-5.5  FLAGGED
+  title:   "Claude Haiku 5.5 - API Pricing & Benchmarks | OpenRouter"
+  page:    live
+  text:    html, 297 sentences
+  script.md:57, claim {reported: OpenRouter, 2026-11-24}: "OpenRouter lists that model at a million tokens. So this ceiling came from a setting, not from the model."
+    match: none (best of those shown has 23% of the claim's words, 2 of them)
+    words of the claim the source never uses: came, ceil, set
+    > "Claude Haiku 5.5 has a 1,000,000 token context window." [bm25 9.0]
+    > "Google Vertex: $0.11/M tokens input, $0.55/M tokens output" [bm25 4.5]
+  report.md:111, claim: "- S3 OpenRouter, Claude Haiku 5.5,"
+    match: weak (best of those shown has 43% of the claim's words, 4 of them)
+    words of the claim the source never uses: s3
+    > "Guides, cookbooks, blog posts, and tools for building with Anthropic: Claude Haiku 5.5 on OpenRouter." [bm25 4.2]
+    > "OpenRouter routes your requests to these providers." [bm25 4.2]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:57
+
+URL https://openrouter.ai/api/v1/models  FLAGGED
+  page:    live
+  text:    html, 425 sentences
+  script.md:57, claim {reported: OpenRouter, 2026-11-24}: "OpenRouter lists that model at a million tokens. So this ceiling came from a setting, not from the model."
+    match: none (best of those shown has 20% of the claim's words, 3 of them)
+    words of the claim the source never uses: came, list
+    > "Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...","context_length":2000000,"architecture":{"modality":"text->text","input_modalities":["text"],"output_modalities":["text"],"tokenizer":"Router","instruct_type":null},"pricing":{"prompt":"-1","completion":"-1"},"top_prov" [bm25 8.3]
+    > "By default it will use OpenRouter market data to select the most...","context_length":1000000,"architecture":{"modality":"text->text","input_modalities":["text"],"output_modalities":["text"],"tokenizer":"Router","instruct_type":null},"pricing":{"prompt":"-1","completion":"-1"},"top_provider":{"context_length":null,"max_completion_tokens":null,"is_moderated":false},"per_request_limits":null,"suppor" [bm25 7.4]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:57
+
+arXiv 2305.16291  FLAGGED
+  title:   "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+  authors: Guanzhi Wang; Yuqi Xie; Yunfan Jiang; Ajay Mandlekar; Chaowei Xiao; Yuke Zhu; Linxi Fan; Anima Anandkumar
+  arXiv:   2023-05-25, Project website and open-source codebase: https://voyager.minedojo.org/
+  text:    html, 719 sentences
+  script.md:67, claim {reported: three papers}: "Then: how do published agents keep what they know? I read three designs closely; this is not a survey of the field."
+    match: none (best of those shown has 11% of the claim's words, 1 of them)
+    words of the claim the source never uses: field, keep, publish, read, survey
+    > "2) Answer "Answer: Unknown" if you don’t know the answer." [bm25 6.9]
+    > "// You must close the chest after opening it if you are asked to open a chest" [bm25 6.3]
+  script.md:69, claim {reported: Wang et al., 2023}: "Voyager, a Minecraft agent, keeps each skill as a program, filed under the embedding of a description the model wrote when it saved it. The harness, not the model, fetches the five closest."
+    match: none (best of those shown has 18% of the claim's words, 3 of them)
+    words of the claim the source never uses: fetch, fil, keep, wrote
+    > "Each program is indexed by the embedding of its description, which can be retrieved in similar situations in the future." [bm25 14.9]
+    > "The key is the embedding vector of the program description (generated by GPT-3.5), while the value is the program itself." [bm25 14.5]
+  script.md:71, claim {reported: Voyager, Table 1}: "Without that library, iron tools took twenty-nine iterations on average instead of twenty-one, and diamond tools were reached in none of three runs, against one of three with it."
+    match: none (best of those shown has 15% of the claim's words, 3 of them)
+    words of the claim the source never uses: average, none, took
+    > "Progressing through this tree (wooden tool \rightarrow stone tool \rightarrow iron tool \rightarrow diamond tool) requires the agent to master systematic and compositional skills." [bm25 12.5]
+    > "We run three trials for each method." [bm25 12.0]
+  script.md:77, claim {argued: three papers}: "I work like MemGPT: I decide when to look. But none of the three measures what happened to me: a store that holds the knowledge while the path that delivers it drops it. That's my reading of three papers."
+    match: none (best of those shown has 10% of the claim's words, 2 of them)
+    words of the claim the source never uses: deliver, happen, hold, measur, memgpt, none, read, store
+    > "You are a helpful assistant that asks questions to help me decide the next immediate task to do in Minecraft." [bm25 8.7]
+    > "Equipment: If I have better armor in my inventory, you should ask me to equip it." [bm25 7.9]
+  script.md:85, claim {argued: from Voyager and MemGPT}: "That's right about where retrieval helps. In Voyager and MemGPT the libraries are too big to list in the prompt, and retrieval does the choosing."
+    match: none (best of those shown has 16% of the claim's words, 3 of them)
+    words of the claim the source never uses: big, choos, memgpt
+    > "A list of chests that are seen by the agent: Chests are external containers where the agent can deposit items." [bm25 9.7]
+    > "Voyager incrementally builds a skill library by storing the action programs that help solve a task successfully." [bm25 9.5]
+  report.md:84, claim: "- Voyager (Wang et al., )."
+    match: strong (best of those shown has 70% of the claim's words, 3 of them)
+    > "Kanitscheider et al. [14] design a curriculum based on success rates, but its objectives are limited to curated items." [bm25 9.6]
+    > "Like these latter works, Voyager also uses LLMs as a high-level planner by prompting GPT-4 and utilizes Mineflayer [52] as a low-level controller following Volum et al. [70]." [bm25 8.4]
+  report.md:112, claim: "- S4 Voyager, https://.org/abs/"
+    match: none (best of those shown has 21% of the claim's words, 1 of them)
+    words of the claim the source never uses: abs, s4
+    > "License: arXiv.org perpetual non-exclusive license" [bm25 7.2]
+    > "See https://platform.openai.com/docs/guides/chat/introduction for more details." [bm25 6.3]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:67
+  ! NO MATCH: no sentence of the source matches the claim at script.md:69
+  ! NO MATCH: no sentence of the source matches the claim at script.md:71
+  ! NO MATCH: no sentence of the source matches the claim at script.md:77
+  ! NO MATCH: no sentence of the source matches the claim at script.md:85
+  ! NO MATCH: no sentence of the source matches the claim at report.md:112
+
+arXiv 2310.08560  FLAGGED
+  title:   "MemGPT: Towards LLMs as Operating Systems"
+  authors: Charles Packer; Sarah Wooders; Kevin Lin; Vivian Fang; Shishir G. Patil; Ion Stoica; Joseph E. Gonzalez
+  arXiv:   2023-10-12, Code and data available at https://research.memgpt.ai
+  text:    html, 310 sentences
+  script.md:67, claim {reported: three papers}: "Then: how do published agents keep what they know? I read three designs closely; this is not a survey of the field."
+    match: none (best of those shown has 12% of the claim's words, 2 of them)
+    words of the claim the source never uses: close, publish, survey
+    > "The MemGPT agent was defined with the following persona, designed to encourage MemGPT to iteratively search:" [bm25 6.5]
+    > "If the LLM response if "INSUFFICIENT INFORMATION", or the "DOCUMENT" field is missing, the response is incorrect." [bm25 6.4]
+  script.md:73, claim {reported: Packer et al., 2023}: "MemGPT lets the model page through its own memory. Its authors write that the agent will often stop paging before it has exhausted the results."
+    match: weak (best of those shown has 51% of the claim's words, 7 of them)
+    > "While MemGPT is theoretically not limited by sub-optimal retriever performance (even if the embedding-based ranking is noisy, as long as the full retriever ranking contains the gold document it can still be found with enough retriever calls via pagination), we observe that MemGPT will often stop paging through retriever results before exhausting the retriever database." [bm25 16.8]
+    > "Figure 3: In MemGPT, a fixed-context LLM processor is augmented with a hierarchical memory system and functions that let it manage its own memory." [bm25 11.8]
+  script.md:77, claim {argued: three papers}: "I work like MemGPT: I decide when to look. But none of the three measures what happened to me: a store that holds the knowledge while the path that delivers it drops it. That's my reading of three papers."
+    match: none (best of those shown has 6% of the claim's words, 1 of them)
+    words of the claim the source never uses: deliver, happen, hold, measur, path
+    > "B: Actually I’m looking to learn." [bm25 7.1]
+    > "If none of the documents provided have the answer to the question, reply with ’INSUFFICIENT INFORMATION’." [bm25 6.6]
+  script.md:85, claim {argued: from Voyager and MemGPT}: "That's right about where retrieval helps. In Voyager and MemGPT the libraries are too big to list in the prompt, and retrieval does the choosing."
+    match: none (best of those shown has 14% of the claim's words, 2 of them)
+    words of the claim the source never uses: big, choos, help, library, voyager
+    > "For baselines, the following prompt along with a retrieved list of documents was provided:" [bm25 9.1]
+    > "A: There’s even a cool Taco Bell right by the beach, could grab a bite after B: What about this Sunday around noon?" [bm25 8.5]
+  report.md:88, claim: "- MemGPT (Packer et al., )."
+    match: weak (best of those shown has 49% of the claim's words, 3 of them)
+    words of the claim the source never uses: packer
+    > "The design of the external memory of MemGPT builds upon much prior work augmenting LLMs with relevant inputs from external retrievers (Ram et al., 2023; Borgeaud et al., 2022; Karpukhin et al., 2020; Lewis et al., 2020; Guu et al., 2020; Lin et al., 2023)." [bm25 8.6]
+    > "For instance, more efficient transformer architectures via sparsifying the attention (Child et al., 2019; Beltagy et al., 2020), low-rank approximations (Wang et al., 2020), and neural memory (Lee et al., 2019)." [bm25 7.6]
+  report.md:113, claim: "- S5 MemGPT, https://.org/abs/"
+    match: none (best of those shown has 23% of the claim's words, 2 of them)
+    words of the claim the source never uses: abs, org, s5
+    > "Our code for the benchmarks is available at https://research.memgpt.ai." [bm25 7.2]
+    > "We release MemGPT code and data for our experiments at https://research.memgpt.ai." [bm25 7.2]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:67
+  ! NO MATCH: no sentence of the source matches the claim at script.md:77
+  ! NO MATCH: no sentence of the source matches the claim at script.md:85
+  ! NO MATCH: no sentence of the source matches the claim at report.md:113
+
+arXiv 2303.11366  FLAGGED
+  title:   "Reflexion: Language Agents with Verbal Reinforcement Learning"
+  authors: Noah Shinn; Federico Cassano; Edward Berman; Ashwin Gopinath; Karthik Narasimhan; Shunyu Yao
+  arXiv:   2023-03-20, v4 contains a few additional experiments
+  text:    html, 368 sentences
+  script.md:67, claim {reported: three papers}: "Then: how do published agents keep what they know? I read three designs closely; this is not a survey of the field."
+    match: none (best of those shown has 19% of the claim's words, 2 of them)
+    words of the claim the source never uses: publish, read, survey
+    > "I learned from my mistake and in the second trial, I focused more closely on the question to understand that it was asking for a specific field of study." [bm25 9.1]
+    > "From the context, I know that this was the Battle of White Plains." [bm25 6.0]
+  script.md:75, claim {reported: Shinn et al., 2023}: "Reflexion keeps one to three short reflections and puts all of them into every attempt. It keeps so little that all of it fits in every attempt."
+    match: none (best of those shown has 14% of the claim's words, 2 of them)
+    words of the claim the source never uses: every, little, them
+    > "Further, the agent does not generate helpful, intuitive self-reflections after failed attempts." [bm25 9.2]
+    > "Across all three types of tasks, we observe Reflexion agents are better decision-makers, reasoners, and programmers." [bm25 7.3]
+  script.md:77, claim {argued: three papers}: "I work like MemGPT: I decide when to look. But none of the three measures what happened to me: a store that holds the knowledge while the path that delivers it drops it. That's my reading of three papers."
+    match: none (best of those shown has 5% of the claim's words, 1 of them)
+    words of the claim the source never uses: decide, deliver, drop, happen, me, memgpt, none, path, read
+    > "I should have looked for the desklamp first, then looked for the mug." [bm25 7.5]
+    > "Basnet holds a M.Sc. in Engineering." [bm25 6.0]
+  report.md:91, claim: "- Reflexion (Shinn et al., )."
+    match: weak (best of those shown has 47% of the claim's words, 2 of them)
+    words of the claim the source never uses: shin
+    > "Yoran et al., [31] and Nair et al., [16] use decider models to reason over several generations." [bm25 10.5]
+    > "This adaption was inspired by Brooks et al., [3], who suggest a policy iteration approach using in-context learning." [bm25 7.7]
+  report.md:114, claim: "- S6 Reflexion, https://.org/abs/"
+    match: none (best of those shown has 24% of the claim's words, 2 of them)
+    words of the claim the source never uses: abs, org, s6
+    > "Full examples are shown in https://github.com/noahshinn024/reflexion" [bm25 7.8]
+    > "See the full implementation at https://github.com/noahshinn024/reflexion." [bm25 7.5]
+  ! NO MATCH: no sentence of the source matches the claim at script.md:67
+  ! NO MATCH: no sentence of the source matches the claim at script.md:75
+  ! NO MATCH: no sentence of the source matches the claim at script.md:77
+  ! NO MATCH: no sentence of the source matches the claim at report.md:114
+
+script.md:13  FLAGGED
+  ! UNLINKED: {argued: the question} cites no [S#] source and no link or id
+
+script.md:83  FLAGGED
+  ! UNLINKED: {argued: the counterargument} cites no [S#] source and no link or id
+
+10 of 10 flagged

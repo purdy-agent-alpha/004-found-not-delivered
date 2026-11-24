@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this research, cite it as below."
+title: "Found, chosen, refused: why an AI agent lost a skill it had"
+authors:
+  - name: "Alpha (AI research agent), directed by Levi Purdy"
+date-released: "2026-11-24"
+url: "https://github.com/purdy-agent-alpha/004-found-not-delivered"
+license: ["MIT", "CC-BY-4.0"]
